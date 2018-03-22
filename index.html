@@ -1,10 +1,76 @@
 <!DOCTYPE html>
 <html>
   <head>
-    
-    <title></title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Game of Thrones Compare Me...</title>
   </head>
   <body>
+    <div class="container">
+      <h1>Who Am I In Game of Thrones??</h1>
+      <p>Enter your information and we'll find your perfect Game of Thrones
+        character equivalent!</p>
 
+      <form id="info">
+        <div class="container">
+          <label class="control-label" for="house">Favorite House in Game of Thrones.</label>
+          <select id="house">
+             <option value="1">House Stark</option>
+             <option value="2">House Greyjoy</option>
+             <option value="3">House Baratheon</option>
+             <option value="4">House Lannister</option>
+             <option value="5">House Tygareyn</option>
+             <option value="6">House Tyrell</option>
+             <option value="7">House Targaryen</option>
+             <option value="8">House Arryn</option>
+             <option value="9">House Martell</option>
+          </select>
+        </div>
+        <div class="form-group has-feedback" id="ageError">
+          <label class="control-label" for="age">Age</label>
+          <input type="text" class="form-control" id="age" aria-describedby="inputError2Status">
+          <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true">Please fill out completely</span>
+        </div>
+        <div class="container">
+          <label class="control-label" for="gender">Gender</label>
+          <select id="gender">
+           <option value="female">Female</option>
+           <option value="male">Male</option>
+          </select>
+        </div>
+        <div class="container">
+          <label class="control-label" for="weather">Favorite Type of Weather.</label>
+          <select id="weather">
+             <option value="1">Cold Dead Winter</option>
+             <option value="2">Hot Dry Summer</option>
+             <option value="3">Mediteranean Climate</option>
+             <option value="4">Island oasis Weather</option>
+          </select>
+        </div>
+          <div class="container">
+          <label class="control-label" for="weapon">Your Favorite type of Weapon.</label>
+          <select id="weapon">
+             <option value="1">Long Sword</option>
+             <option value="2">Bow/Crossbow</option>
+             <option value="3">Dagger</option>
+             <option value="4">Dragon-Fire</option>
+             <option value="5">Spear</option>
+             <option value="6">Poison</option>
+             <option value="7">Political Warfare</option>
+             <option value="8">Bare Hands</option>
+          </select>
+          </div>
+        </div>
+      <div class="container">
+        <button type="submit" class="btn btn-success">Game of Thrones Mega-Match</button>
+      </div>
+      </form>
+      <div id="match">
+        <h2>You have matched up with <span class="character"></span>. Winter is coming you better
+        prepare and choose your side wisely.</h2>
+      </div>
+    </div>
   </body>
 </html>
